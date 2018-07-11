@@ -70,7 +70,8 @@ self.addEventListener('activate', function(event) {
  */
 self.addEventListener('fetch', function(event) {
     let requestUrl = new URL(event.request.url);
-    console.log(requestUrl.origin === location.origin);
+    console.log(requestUrl.origin );
+    console.log(location.origin );
     if (requestUrl.origin === location.origin) {
         console.log(requestUrl.pathname);
         if (requestUrl.pathname === '/') {
