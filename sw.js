@@ -38,7 +38,7 @@ self.addEventListener("install", function(event) {
                 "./js/main.js",
                 "./css/styles.css",
                 "./js/dbhelper.js",
-                "./js/restaurant_info.js"              
+                "./js/restaurant_info.js"
             ]);
         })
     );
@@ -50,7 +50,6 @@ self.addEventListener("install", function(event) {
 self.addEventListener('activate', function(event) {
     event.waitUntil(
         caches.keys().then(function(cacheNames) {
-
             return Promise.all(
                 cacheNames.filter(function(cacheName) {
                     return cacheName.startsWith('mws-restaurant-v') &&
@@ -65,7 +64,7 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
     let requestUrl = new URL(event.request.url);
-           event.respondWith(
+    event.respondWith(
         caches.match(requestUrl.pathname).then(function(response) {
             return response || fetch(event.request);
         })
