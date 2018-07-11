@@ -71,6 +71,7 @@ self.addEventListener('activate', function(event) {
 self.addEventListener('fetch', function(event) {
     let requestUrl = new URL(event.request.url);
     if (requestUrl.origin === location.origin) {
+        console.log(requestUrl.pathname);
         if (requestUrl.pathname === '/') {
             event.respondWith(caches.match('/'));
             return;
