@@ -1,0 +1,21 @@
+{
+  "short_name": "Restaurant Reviews",
+  "name": "Restaurant Reviews App with Google Maps",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#404040",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0AEBF4"
+}
