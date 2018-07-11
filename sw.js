@@ -38,9 +38,7 @@ self.addEventListener("install", function(event) {
                 "./js/main.js",
                 "./css/styles.css",
                 "./js/dbhelper.js",
-                "./js/restaurant_info.js",
-                "./sw.js"
-               
+                "./js/restaurant_info.js"              
             ]);
         })
     );
@@ -65,21 +63,10 @@ self.addEventListener('activate', function(event) {
     );
 });
 
-/**
- * To fetch path "/" to work offline first
- */
+
 self.addEventListener('fetch', function(event) {
     let requestUrl = new URL(event.request.url);
-    console.log(requestUrl.origin );
-    console.log(location.origin );
-    if (requestUrl.origin === location.origin) {
-        console.log(requestUrl.pathname);
-        if (requestUrl.pathname === '/') {
-            event.respondWith(caches.match('/'));
-            return;
-        }
-    }
-    event.respondWith(
+           event.respondWith(
         caches.match(event.request).then(function(response) {
             return response || fetch(event.request);
         })
