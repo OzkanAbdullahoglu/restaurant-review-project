@@ -1,7 +1,7 @@
 /**
  * Defining a constant variable for staticCacheName
  */
-const staticCacheName = 'mws-restaurant-v45';
+const staticCacheName = 'mws-restaurant-v46';
 
 /**
  * Installing serviceWorker
@@ -39,9 +39,8 @@ self.addEventListener("install", function(event) {
                 "./css/styles.css",
                 "./js/dbhelper.js",
                 "./js/restaurant_info.js",
-                "./sw.js",
-                "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css",
-                "https://fonts.googleapis.com/css?family=Montserrat"
+                "./sw.js"
+               
             ]);
         })
     );
