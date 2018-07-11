@@ -31,7 +31,7 @@ Elements on the page use the appropriate semantic elements. For those elements i
 When available in the browser, the site uses a service worker to cache responses to requests for site assets. Visited pages are rendered when there is no network access.
 
 ## Demonstration
-Completed project can be seen in this  [link](https://ozkanabdullahoglu.github.io/mws-restaurant-stage-1/)
+Completed project can be seen in this  [link](https://ozkanabdullahoglu.github.io/restaurant-review-project/)
 
 ## Authors
 * @forbiddenvoid @hbkwong
