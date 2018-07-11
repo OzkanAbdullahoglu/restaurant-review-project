@@ -1,7 +1,7 @@
 /**
  * Defining a constant variable for staticCacheName
  */
-const staticCacheName = 'mws-restaurant-v41';
+const staticCacheName = 'mws-restaurant-v44';
 
 /**
  * Installing serviceWorker

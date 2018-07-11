@@ -164,5 +164,6 @@ getParameterByName = (name, url) => {
         return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-let deneme = document.getElementById('restaurant-info');
-deneme.focus();
+// to focus on restaruant main info such as name, cuisine and address
+let focusToInfo = document.getElementById('restaurant-info');
+focusToInfo.focus();
